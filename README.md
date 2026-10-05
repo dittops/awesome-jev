@@ -74,7 +74,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
-- [Content Moderation](categories/content-moderation.md) — 8 entries
+- [Content Moderation](categories/content-moderation.md) — 9 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 102 entries
 
 ### Open categories still being seeded
@@ -652,6 +652,7 @@ Source file: [`categories/content-moderation.md`](categories/content-moderation.
 - [jev_antispam_bot](https://github.com/backmeupplz/jev_antispam_bot) ![stars](https://img.shields.io/github/stars/backmeupplz/jev_antispam_bot?style=flat-square&label=%E2%98%85) - Telegram moderation: minimal grammY anti-spam bot that asks Jev about each message, with ten test files behind it.
 - [jev-slop-guard](https://github.com/davertor/jev-slop-guard) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/davertor/jev-slop-guard?style=flat-square&label=%E2%98%85) - Social feed filtering: bring-your-own-key Chrome extension that asks Jev one `Choice` (`slop` / `not_slop`) per X and LinkedIn post as it scrolls into view, blurring and stamping anything at or above a user-set threshold (default 0.7) behind a "Show the post" override, with a three-request concurrency cap and one cached verdict per post so scrolling never blocks.
 - [jev-screen-mcp](https://github.com/jiawei686/jev-screen-mcp) ![stars](https://img.shields.io/github/stars/jiawei686/jev-screen-mcp?style=flat-square&label=%E2%98%85) - Moderation: a single-tool MCP server that gates screen content through Jev, exposing `noul`, `choice`, and `score` as first-class question types alongside a deterministic mock mode and three tests.
+- [Rot Guard](https://github.com/plusminushalf/rot-guard) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/plusminushalf/rot-guard?style=flat-square&label=%E2%98%85) - Digital wellbeing: bring-your-own-key Chrome extension that asks Jev a content-category `Choice`, a `Noul` on whether the page serves the user's written goals and a 0–4 waste-of-time `Score` for every YouTube video, X, Reddit or LinkedIn page and article, plus a `Choice` and `Noul` per X post and YouTube tile in batches of 10, then blocks or collapses in code with thresholds that tighten at 2, 10 and 20 minutes of engaged time, and grades a one-shot appeal with three `Noul`s that earn 15 minutes or lock the page until midnight.
 
 ### Related Practices / Discussions
 
