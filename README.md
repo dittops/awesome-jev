@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 35 entries
 - [Calibration & Research](categories/calibration-research.md) — 50 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 101 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 102 entries
 - [Game & Simulation](categories/game-simulation.md) — 25 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
@@ -574,6 +574,7 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Decision Models in llama.cpp](https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp) - Local inference: llama.cpp adds a `/v1/systemone` endpoint that takes a state, questions and candidate answers and returns the chosen option with a probability for each, in Jev's own wire format, with official tests from 144M up to 27B models.
 - [Databricks AI Decide](https://www.databricks.com/blog/introducing-aidecide-make-fast-decisions-your-governed-data) - Data platform: Databricks ships `ai_decide`, an AI Function that classifies, scores and chooses over governed data, and says it built it because demand for fast structured decisions followed the Jev launch.
 - [metajev](https://github.com/YYTbit/metajev) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/YYTbit/metajev?style=flat-square&label=%E2%98%85) - Decision infrastructure: keeps the full distribution behind each Jev `Noul`, `Choice`, or `Score` answer under a key of state, question, and model, so an accept boundary can be moved across the whole recorded history with no further Jev calls.
+- [holon](https://github.com/holon-run/holon) ![stars](https://img.shields.io/github/stars/holon-run/holon?style=flat-square&label=%E2%98%85) - Agent workbench: keeps decisions in their own crate and notes in the adapter for its first backend, Cloudflare's Clef, that "Clef uses the System One-shaped state/questions request" — the interface being borrowed rather than reinvented.
 
 ### Game & Simulation
 
