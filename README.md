@@ -67,7 +67,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Scoring & Ranking](categories/scoring-ranking.md) — 40 entries
 - [Agent Decisions](categories/agent-decisions.md) — 60 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 35 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 36 entries
 - [Calibration & Research](categories/calibration-research.md) — 50 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 102 entries
 - [Game & Simulation](categories/game-simulation.md) — 25 entries
@@ -414,6 +414,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [zh-decision-bench](https://github.com/CodyQin/zh-decision-bench) ![stars](https://img.shields.io/github/stars/CodyQin/zh-decision-bench?style=flat-square&label=%E2%98%85) - Benchmarking: first Chinese-language calibration benchmark for Jev-class decision models (378 items / 5 models incl. NeoHorse-Jev-4B; accuracy, ECE, option-order and zh-CN/zh-TW robustness; CC BY 4.0 dataset on Hugging Face).
 - [jev vs. open alternatives](https://github.com/run-llama/jev_vs_oss) ![stars](https://img.shields.io/github/stars/run-llama/jev_vs_oss?style=flat-square&label=%E2%98%85) - Document pipelines: compares Jev against open models and specialised tools on five chores — language detection, orientation, RVL-CDIP classification, bundle splitting and parse-tier triage — asked as `Choice(2)` up to `Choice(16)`.
 - [S1MB](https://github.com/hotchpotch/S1MB) ![stars](https://img.shields.io/github/stars/hotchpotch/S1MB?style=flat-square&label=%E2%98%85) - Decision-model evaluation: compares Jev and open decision models across 137 English Choice, Noul, and Score benchmarks, including six synthetic generalization probes, with public evaluation data, recorded results, and an interactive [leaderboard](https://huggingface.co/spaces/hotchpotch/S1MB-leaderboard).
+- [jev-judge](https://github.com/00200200/jev-judge) ![type: cli](https://img.shields.io/badge/type-cli-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/00200200/jev-judge?style=flat-square&label=%E2%98%85) - CI/CD & LLM evaluation: runs declarative YAML/JSON/JSONL test suites natively on Jev Noul, Choice, and Score decisions for RAG faithfulness, hallucination detection, and agent safety with watch mode, parallel batching, and GitHub Actions PR reporting in sub-100ms at $0.00004 per decision.
 
 ### Calibration & Research
 
