@@ -61,14 +61,14 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 62 entries
+- [Classification & Routing](categories/classification-routing.md) — 65 entries
 - [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 10 entries
 - [Verification & Guardrails](categories/verification-guardrails.md) — 48 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 41 entries
 - [Agent Decisions](categories/agent-decisions.md) — 61 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
-- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 36 entries
-- [Calibration & Research](categories/calibration-research.md) — 50 entries
+- [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 37 entries
+- [Calibration & Research](categories/calibration-research.md) — 51 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 102 entries
 - [Game & Simulation](categories/game-simulation.md) — 25 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
@@ -181,6 +181,9 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [Gut Check](https://github.com/funkadelic/ha-gutcheck) ![stars](https://img.shields.io/github/stars/funkadelic/ha-gutcheck?style=flat-square&label=%E2%98%85) - Smart home: Home Assistant integration whose eight install checks ask Jev a `Score` on each pending update's release notes and a `Choice` per item elsewhere, such as whether an unavailable entity is expected, worth fixing or safe to remove; answers below 0.5 confidence change nothing, and the rest that need action become Repairs cards the user must confirm.
 - [Vibefilter](https://github.com/vibefilter/filament) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/vibefilter/filament?style=flat-square&label=%E2%98%85) - Admin panels: Filament table filter that asks Jev a `Noul` per row on a plain-English statement such as "The customer is angry." and keeps the rows at or above 0.8, matching the demo's own mood labels on 861 of 1,000 reviews at about $0.003 and one second per statement, with scores cached by content.
 - [decision-router](https://github.com/Ruivalim/decision-router) ![agent: Multi](https://img.shields.io/badge/agent-Multi-1F6FEB?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/Ruivalim/decision-router?style=flat-square&label=%E2%98%85) - Coding agents: Claude Code plugin, Pi virtual model and CLI that pick the model for each task from one Jev call, a `Choice` over the candidates asked in both orders plus a complexity `Score` that sets a minimum tier, raising accuracy on 30 agent-labeled prompts from 73% with the `Choice` alone to 93%, with quota-aware filtering and a fallback below 0.3 confidence.
+- [Jev-driven SRE diagnosis](https://www.sregym.com/blog/jev-driven-sre-diagnosis) - Incident diagnosis: runs with no LLM agent at all, collecting Kubernetes evidence for Jev to pick a root cause and its supporting observations, and passes 80 of 105 diagnoses across 21 faults at a median of 14.6 seconds.
+- [Jev for voice agent turn detection](https://veris.ai/blog/jev-turn-detection) - Voice agents: has Jev decide when a caller has finished talking, cutting the share of turns where the agent interrupts its caller from 52% to 11% over the same 100 tasks.
+- [Kilo Code auto-routing](https://github.com/Kilo-Org/cloud/pull/7223) ![stars](https://img.shields.io/github/stars/Kilo-Org/cloud?style=flat-square&label=%E2%98%85) - Coding agents: replaces an LLM call in the auto-routing path with a System One classification, merged into the Kilo cloud monorepo.
 
 ### Adaptive & Realtime UI
 
@@ -417,6 +420,7 @@ Source file: [`categories/evaluation-benchmarking.md`](categories/evaluation-ben
 - [jev vs. open alternatives](https://github.com/run-llama/jev_vs_oss) ![stars](https://img.shields.io/github/stars/run-llama/jev_vs_oss?style=flat-square&label=%E2%98%85) - Document pipelines: compares Jev against open models and specialised tools on five chores — language detection, orientation, RVL-CDIP classification, bundle splitting and parse-tier triage — asked as `Choice(2)` up to `Choice(16)`.
 - [S1MB](https://github.com/hotchpotch/S1MB) ![stars](https://img.shields.io/github/stars/hotchpotch/S1MB?style=flat-square&label=%E2%98%85) - Decision-model evaluation: compares Jev and open decision models across 137 English Choice, Noul, and Score benchmarks, including six synthetic generalization probes, with public evaluation data, recorded results, and an interactive [leaderboard](https://huggingface.co/spaces/hotchpotch/S1MB-leaderboard).
 - [jev-judge](https://github.com/00200200/jev-judge) ![type: cli](https://img.shields.io/badge/type-cli-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/00200200/jev-judge?style=flat-square&label=%E2%98%85) - CI/CD & LLM evaluation: runs declarative YAML/JSON/JSONL test suites natively on Jev Noul, Choice, and Score decisions for RAG faithfulness, hallucination detection, and agent safety with watch mode, parallel batching, and GitHub Actions PR reporting in sub-100ms at $0.00004 per decision.
+- [Vals AI's independent evaluation of Jev](https://x.com/ValsAI/status/2107559370208997711) - Independent benchmark: matches GPT-6 Astra's 97.5% on 400 claim-verification questions at roughly a five-hundredth of the cost, yet ranks last on a 12-task LegalBench slice and lands at 1.6% error when tuned to a 1% budget.
 
 ### Calibration & Research
 
@@ -472,6 +476,7 @@ Source file: [`categories/calibration-research.md`](categories/calibration-resea
 - [jevcrypto](https://github.com/gignac-cha/jevcrypto) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/gignac-cha/jevcrypto?style=flat-square&label=%E2%98%85) - Creative experiment: a `crypto.randomUUID()` look-alike npm package that writes Jev's raw `Noul` probabilities on 15 code-point permutations of any prompt, plus one `Choice` for the variant digit, into the bytes of a UUID v4-shaped string; deliberately not cryptographically random.
 - [Vev](https://github.com/Xiaooolong/vev) ![stars](https://img.shields.io/github/stars/Xiaooolong/vev?style=flat-square&label=%E2%98%85) - Open alternative: an open-source Jev implementation with vision input, LoRA fine-tuned on Qwen3.5-4B and 9B, serving `Choice`, `Score` and `Noul` questions on the `/v1/systemone` wire format with screenshots and photos placed directly in the state so one decision can use both text and image; weights are CC BY-NC 4.0, non-commercial only.
 - [WaterSheep](https://github.com/SamratDuttaOfficial/WaterSheep) ![type: self-hosted](https://img.shields.io/badge/type-self--hosted-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/SamratDuttaOfficial/WaterSheep?style=flat-square&label=%E2%98%85) - Open alternative: an Apache-2.0 ModernBERT fine-tune that answers `Noul`, `Choice`, `Score` and multi-label questions with a probability for every option, serves Jev's `POST /v1/systemone` locally so TypeSafe's Python SDK runs against it unchanged, and reports 0.026 expected calibration error on its test split.
+- [Gutsy](https://github.com/kouhxp/gutsy) ![stars](https://img.shields.io/github/stars/kouhxp/gutsy?style=flat-square&label=%E2%98%85) - Local decisions: an Apache-2.0 model that answers typed questions with calibrated probabilities on CPU, with no GPU and no hosted API.
 
 ### Infra / SDKs / Integrations
 
