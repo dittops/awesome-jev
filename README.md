@@ -70,7 +70,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 36 entries
 - [Calibration & Research](categories/calibration-research.md) — 50 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 102 entries
-- [Game & Simulation](categories/game-simulation.md) — 25 entries
+- [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
@@ -609,6 +609,7 @@ Source file: [`categories/game-simulation.md`](categories/game-simulation.md)
 - [Pacman AI Race](https://github.com/MaryNfs/pacman-ai-race) ![stars](https://img.shields.io/github/stars/MaryNfs/pacman-ai-race?style=flat-square&label=%E2%98%85) - Gaming: browser-based Pac-Man race where deterministic three-junction simulation removes routes predicted to be fatal when a survivor exists, then Jev makes one typed `Choice` among the remaining route IDs while the server rejects any answer outside the supplied set, with self-hosted Laya using the same decision contract for comparison.
 - [1 Million Emojis](https://chriswijnia.com/lab/emoji) - Collaborative art: a shared 1000 × 1000 emoji canvas where, after each visitor stroke, one Jev request asks a `Choice` over named (emoji, square) pairs next to it and a `Noul` on whether the stroke is an unfinished shape, finishing the loop or line above 0.7 and otherwise sampling its pick from the returned probabilities ([source](https://github.com/cwdx/1-million-emojis)).
 - [FlightBench](https://github.com/AlperKartkaya/FlightBench) ![stars](https://img.shields.io/github/stars/AlperKartkaya/FlightBench?style=flat-square&label=%E2%98%85) - Flight simulation: a fixed-wing landing simulator and benchmark where you can compete with Jev in landing a plane, mapping four Jev `Choice` decisions to aircraft controls in JSBSim and benchmarking landings against human-pilot, baseline, and LLM controllers, with planned support for open-source Jev-like decision models.
+- [AI Hold'em](https://www.aiholdem.gg) - Gaming: browser-based Texas Hold'em where a TypeSafe Jev bot receives structured hand state and a typed `Choice` over complete legal moves and bet sizes, with the poker engine validating the selected action before it is applied ([source](https://github.com/jonime/ai-holdem)).
 
 ### Robotics & Physical
 
