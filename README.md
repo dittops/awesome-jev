@@ -61,21 +61,21 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Classification & Routing](categories/classification-routing.md) — 65 entries
-- [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 10 entries
-- [Verification & Guardrails](categories/verification-guardrails.md) — 48 entries
+- [Classification & Routing](categories/classification-routing.md) — 66 entries
+- [Adaptive & Realtime UI](categories/adaptive-realtime-ui.md) — 11 entries
+- [Verification & Guardrails](categories/verification-guardrails.md) — 49 entries
 - [Scoring & Ranking](categories/scoring-ranking.md) — 41 entries
 - [Agent Decisions](categories/agent-decisions.md) — 62 entries
 - [Data Labeling & Curation](categories/data-labeling-curation.md) — 10 entries
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 37 entries
 - [Calibration & Research](categories/calibration-research.md) — 51 entries
-- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 103 entries
+- [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 106 entries
 - [Game & Simulation](categories/game-simulation.md) — 26 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
-- [Content Moderation](categories/content-moderation.md) — 9 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 102 entries
+- [Content Moderation](categories/content-moderation.md) — 10 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 103 entries
 
 ### Open categories still being seeded
 
@@ -184,6 +184,7 @@ Source file: [`categories/classification-routing.md`](categories/classification-
 - [Jev-driven SRE diagnosis](https://www.sregym.com/blog/jev-driven-sre-diagnosis) - Incident diagnosis: runs with no LLM agent at all, collecting Kubernetes evidence for Jev to pick a root cause and its supporting observations, and passes 80 of 105 diagnoses across 21 faults at a median of 14.6 seconds.
 - [Jev for voice agent turn detection](https://veris.ai/blog/jev-turn-detection) - Voice agents: has Jev decide when a caller has finished talking, cutting the share of turns where the agent interrupts its caller from 52% to 11% over the same 100 tasks.
 - [Kilo Code auto-routing](https://github.com/Kilo-Org/cloud/pull/7223) ![stars](https://img.shields.io/github/stars/Kilo-Org/cloud?style=flat-square&label=%E2%98%85) - Coding agents: replaces an LLM call in the auto-routing path with a System One classification, merged into the Kilo cloud monorepo.
+- [SAP S/4HANA procurement fraud](https://github.com/seccoit/sap-s4-antifraude-jev) ![stars](https://img.shields.io/github/stars/seccoit/sap-s4-antifraude-jev?style=flat-square&label=%E2%98%85) - ERP fraud: a proof of concept that flags suspicious purchase orders in SAP S/4HANA with a Jev classification.
 
 ### Adaptive & Realtime UI
 
@@ -199,6 +200,7 @@ Source file: [`categories/adaptive-realtime-ui.md`](categories/adaptive-realtime
 - [SemanticSpace](https://semanticspace.dev/) - Semantic mapping: places phrases in 2D by asking Jev how strongly each one relates to two chosen axis concepts and using those scores as coordinates.
 - [shapeshift](https://github.com/anishfn/shapeshift) ![stars](https://img.shields.io/github/stars/anishfn/shapeshift?style=flat-square&label=%E2%98%85) - Input: one text box that morphs into the right UI as you type, asking Jev which control the sentence calls for, and running offline.
 - [Jevcast](https://github.com/RyanErkal/jevcast) ![stars](https://img.shields.io/github/stars/RyanErkal/jevcast?style=flat-square&label=%E2%98%85) - Desktop productivity: native macOS launcher and window manager that uses Jev to match natural-language window and action commands to known application workflows with local response caching.
+- [Laser](https://github.com/iYassr/omarchy-laser) ![stars](https://img.shields.io/github/stars/iYassr/omarchy-laser?style=flat-square&label=%E2%98%85) - Focus mode: blocks distractions on an Omarchy/Hyprland desktop, using Jev to decide what to block.
 
 ### Verification & Guardrails
 
@@ -252,6 +254,7 @@ Source file: [`categories/verification-guardrails.md`](categories/verification-g
 - [Skill Scanner](https://github.com/cisco-ai-defense/skill-scanner) ![stars](https://img.shields.io/github/stars/cisco-ai-defense/skill-scanner?style=flat-square&label=%E2%98%85) - Agent security: Cisco's scanner hunts prompt injection and exfiltration in agent skills, and ships a System One analyzer as a deliberately advisory tier that cannot emit a finding or change a severity.
 - [openclaw-jev-leakguard](https://github.com/yousan/openclaw-jev-leakguard) ![agent: OpenClaw](https://img.shields.io/badge/agent-OpenClaw-B91C1C?style=flat-square) ![type: plugin](https://img.shields.io/badge/type-plugin-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/yousan/openclaw-jev-leakguard?style=flat-square&label=%E2%98%85) - Agent security: OpenClaw plugin that checks every outgoing agent message against where it is going, running local key-format and term rules and then five Jev `Noul` questions in one call (credential, where credentials are kept, client name, internal infrastructure, confidential business information) through OpenClaw's `decisionModel`, hosted Jev or a local Kev, and blocking, asking or holding it back by the channel's public, shared or private tier; with Jev it missed 0 of 56 synthetic leaks, 30 of which no regex or term list could see, with 4 false alarms on 57 ordinary messages at 223 ms p50.
 - [jev-runtime-security](https://github.com/ringzerosec/jev-runtime-security) ![stars](https://img.shields.io/github/stars/ringzerosec/jev-runtime-security?style=flat-square&label=%E2%98%85) - AI security: asks Jev a Choice on tool-call argument risk and a Noul on sensitive-data exposure for AI coding agents, where the model answer can only raise severity and the kernel still decides the syscall.
+- [NucleiSniper](https://github.com/MorDavid/NucleiSniper) ![stars](https://img.shields.io/github/stars/MorDavid/NucleiSniper?style=flat-square&label=%E2%98%85) - Security triage: prioritises Nuclei vulnerability templates by fingerprinting the target first, so a scan spends its budget on templates that can actually match.
 
 ### Scoring & Ranking
 
@@ -586,6 +589,9 @@ Source file: [`categories/infra-sdks-integrations.md`](categories/infra-sdks-int
 - [Databricks AI Decide](https://www.databricks.com/blog/introducing-aidecide-make-fast-decisions-your-governed-data) - Data platform: Databricks ships `ai_decide`, an AI Function that classifies, scores and chooses over governed data, and says it built it because demand for fast structured decisions followed the Jev launch.
 - [metajev](https://github.com/YYTbit/metajev) ![type: library](https://img.shields.io/badge/type-library-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/YYTbit/metajev?style=flat-square&label=%E2%98%85) - Decision infrastructure: keeps the full distribution behind each Jev `Noul`, `Choice`, or `Score` answer under a key of state, question, and model, so an accept boundary can be moved across the whole recorded history with no further Jev calls.
 - [holon](https://github.com/holon-run/holon) ![stars](https://img.shields.io/github/stars/holon-run/holon?style=flat-square&label=%E2%98%85) - Agent workbench: keeps decisions in their own crate and notes in the adapter for its first backend, Cloudflare's Clef, that "Clef uses the System One-shaped state/questions request" — the interface being borrowed rather than reinvented.
+- [jev-bisect](https://github.com/mkly/jev-bisect) ![stars](https://img.shields.io/github/stars/mkly/jev-bisect?style=flat-square&label=%E2%98%85) - Numeric search: turns Jev into a bisection oracle, halving a range with typed yes/no answers to home in on a number instead of asking a model to guess it.
+- [TypeSafe Jev + ComfyUI](https://github.com/youneselfakir0/typesafe-jev-comfyui-integration) ![stars](https://img.shields.io/github/stars/youneselfakir0/typesafe-jev-comfyui-integration?style=flat-square&label=%E2%98%85) - Image generation: routes a prompt to one of three ComfyUI workflow templates with a Jev decision rather than a keyword match.
+- [system_one_client](https://github.com/schainks/system_one_client) ![stars](https://img.shields.io/github/stars/schainks/system_one_client?style=flat-square&label=%E2%98%85) - Elixir ecosystem: one client that speaks to several System One decision models, Jev among them, behind a single interface.
 
 ### Game & Simulation
 
@@ -665,6 +671,7 @@ Source file: [`categories/content-moderation.md`](categories/content-moderation.
 - [jev-slop-guard](https://github.com/davertor/jev-slop-guard) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/davertor/jev-slop-guard?style=flat-square&label=%E2%98%85) - Social feed filtering: bring-your-own-key Chrome extension that asks Jev one `Choice` (`slop` / `not_slop`) per X and LinkedIn post as it scrolls into view, blurring and stamping anything at or above a user-set threshold (default 0.7) behind a "Show the post" override, with a three-request concurrency cap and one cached verdict per post so scrolling never blocks.
 - [jev-screen-mcp](https://github.com/jiawei686/jev-screen-mcp) ![stars](https://img.shields.io/github/stars/jiawei686/jev-screen-mcp?style=flat-square&label=%E2%98%85) - Moderation: a single-tool MCP server that gates screen content through Jev, exposing `noul`, `choice`, and `score` as first-class question types alongside a deterministic mock mode and three tests.
 - [Rot Guard](https://github.com/plusminushalf/rot-guard) ![type: extension](https://img.shields.io/badge/type-extension-4B5563?style=flat-square) ![stars](https://img.shields.io/github/stars/plusminushalf/rot-guard?style=flat-square&label=%E2%98%85) - Digital wellbeing: bring-your-own-key Chrome extension that asks Jev a content-category `Choice`, a `Noul` on whether the page serves the user's written goals and a 0–4 waste-of-time `Score` for every YouTube video, X, Reddit or LinkedIn page and article, plus a `Choice` and `Noul` per X post and YouTube tile in batches of 10, then blocks or collapses in code with thresholds that tighten at 2, 10 and 20 minutes of engaged time, and grades a one-shot appeal with three `Noul`s that earn 15 minutes or lock the page until midnight.
+- [social-risk-qwen-jev](https://github.com/TianJinWeiBoss520/social-risk-qwen-jev) ![stars](https://img.shields.io/github/stars/TianJinWeiBoss520/social-risk-qwen-jev?style=flat-square&label=%E2%98%85) - Chinese moderation: pairs a Qwen3-VL LoRA with a Jev decision model to judge multimodal social-risk content.
 
 ### Related Practices / Discussions
 
@@ -772,6 +779,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Measuring what Jev does in a RAG pipeline](https://x.com/WarlockTome/status/2104210551203401972) - X (Chinese): instead of repeating the unsupported claims about Jev in RAG, builds a pipeline over 42 pages of the official docs and reports that the answer ranked first among 20 answerable questions went from 7 to 17, with none of the unanswerable ones handed to the model.
 - [Jev Decision Index](https://huggingface.co/spaces/multimodalart/jev-decision-index) - Index: an independent Space tracking 70 open reproductions of TypeSafe Jev as of version 0.2.1, the reference list for the replication wave.
 - [Deciding when work is finished with typed questions](https://x.com/chengjian1976/status/2106740150264827938) - X (Chinese): a practitioner's workflow for the wrap-up judgment, asking Jev yes/no, either-or and score questions from a local CLI when the machine is on and from a cloud SDK script when it is not.
+- [Can Jev save my inbox from the Democrats?](https://huggingface.co/blog/stephen-solka/use-jev-to-delete-fundraising-emails) - Write-up: a Hugging Face post on using a local decision model to clear a real inbox of political fundraising mail.
 
 ## Submission format
 

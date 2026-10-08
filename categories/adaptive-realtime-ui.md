@@ -20,3 +20,4 @@ Use this category for interfaces where a Jev decision changes what the user sees
 - [SemanticSpace](https://semanticspace.dev/) - Semantic mapping: places phrases in 2D by asking Jev how strongly each one relates to two chosen axis concepts and using those scores as coordinates.
 - [shapeshift](https://github.com/anishfn/shapeshift) - Input: one text box that morphs into the right UI as you type, asking Jev which control the sentence calls for, and running offline.
 - [Jevcast](https://github.com/RyanErkal/jevcast) - Desktop productivity: native macOS launcher and window manager that uses Jev to match natural-language window and action commands to known application workflows with local response caching.
+- [Laser](https://github.com/iYassr/omarchy-laser) - Focus mode: blocks distractions on an Omarchy/Hyprland desktop, using Jev to decide what to block.
