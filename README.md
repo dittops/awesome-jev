@@ -201,6 +201,7 @@ Source file: [`categories/adaptive-realtime-ui.md`](categories/adaptive-realtime
 - [shapeshift](https://github.com/anishfn/shapeshift) ![stars](https://img.shields.io/github/stars/anishfn/shapeshift?style=flat-square&label=%E2%98%85) - Input: one text box that morphs into the right UI as you type, asking Jev which control the sentence calls for, and running offline.
 - [Jevcast](https://github.com/RyanErkal/jevcast) ![stars](https://img.shields.io/github/stars/RyanErkal/jevcast?style=flat-square&label=%E2%98%85) - Desktop productivity: native macOS launcher and window manager that uses Jev to match natural-language window and action commands to known application workflows with local response caching.
 - [Laser](https://github.com/iYassr/omarchy-laser) ![stars](https://img.shields.io/github/stars/iYassr/omarchy-laser?style=flat-square&label=%E2%98%85) - Focus mode: blocks distractions on an Omarchy/Hyprland desktop, using Jev to decide what to block.
+- [Bud-Decision-Studio](https://github.com/BudEcosystem/Bud-Decision-Studio): a cross-platform desktop app (macOS, Windows, Linux) that runs `laya`, `kev`, `laya-typed-decisions` etc locally behind the Jev API (`POST /v1/systemone`), with a Playground, versioned templates with decision history, and a Train page for LoRA fine-tuning on your own labelled decisions.
 
 ### Verification & Guardrails
 
